@@ -36,7 +36,7 @@ declare namespace OttomanJS {
   }
 
   interface SchemaDefinition {
-    [key: string]: Partial<SchemaField>
+    [key: string]: Partial<SchemaField> | SchemaDefinition | [SchemaDefinition]
   }
 
   interface Schema {
